@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#item_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 27%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-color: #ffcc8061;
+}
+
+#image {
+ 
+    display: flex;
+  
+    transition: transform 1.2s ease; /* Smooth sliding */
+
+}
+
+#fram
+{
+    width: 600px; /* Image container ka width */
+    height: 400px; 
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 10px #b2b1af;
+   
+}
+img {
+    width: 100%;
+    flex-shrink: 0; /* Ensure images stay in place */
+}
+
+.left {
+    transform: rotate(180deg);
+    position: absolute;
+    left: -20%;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    right: -20%;
+    cursor: pointer;
+}
